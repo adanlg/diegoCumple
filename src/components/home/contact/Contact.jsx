@@ -4,7 +4,7 @@ import "./contact.css"; // Importa el archivo CSS para el componente Contact
 import Heading from "../../common/Heading";
 
 const Contact = () => {
-    const phoneNumber = "697369647"; // Aquí coloca el número de teléfono que desees
+    const phoneNumber = "34697369647"; // Aquí coloca el número de teléfono que desees
   
     const handleWhatsAppClick = () => {
         window.open(`https://wa.me/${phoneNumber}`, "_blank"); // Abre WhatsApp en una nueva pestaña
