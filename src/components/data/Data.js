@@ -27,28 +27,28 @@ export const nav = [
 export const featured = [
   {
     cover: "../images/hero/h1.png",
-    name: "Family House",
-    total: "122 Property",
+    name: "Zona tranquila",
+    total: "Ideal para descansar.  15 min andando del centro",
   },
   {
     cover: "../images/hero/h2.png",
-    name: "House & Villa",
-    total: "155 Property",
+    name: "Alojamiento entero",
+    total: "Disfrutareis de la villa completamente para vosotros",
   },
   {
     cover: "../images/hero/h3.png",
-    name: "Apartment",
-    total: "300 Property",
+    name: "6 Dormitorios",
+    total: "Además de 3 baños, cocina, salón, porche y cochera",
   },
   {
     cover: "../images/hero/h4.png",
-    name: "Office & Studio",
-    total: "80 Property",
+    name: "Sitio de estudio",
+    total: "Si te deja Menolo 69",
   },
   {
     cover: "../images/hero/h6.png",
-    name: "Villa & Condo",
-    total: "80 Property",
+    name: "Ideal para barbacoas",
+    total: "Ven aprobar los torreznos de Soria a lo grande",
   },
 ]
 export const list = [
@@ -108,25 +108,25 @@ export const list = [
   },
 ]
 export const awards = [
-  {
-    icon: <i class='fa-solid fa-trophy'></i>,
-    num: "32 M	",
-    name: "Blue Burmin Award",
-  },
+  // {
+  //   icon: <i class='fa-solid fa-trophy'></i>,
+  //   num: "32 M	",
+  //   name: "Blue Burmin Award",
+  // },
   {
     icon: <i class='fa-solid fa-briefcase'></i>,
-    num: "43 M",
-    name: "Mimo X11 Award",
+    num: "1.5 K",
+    name: "Viajeros hospedados",
   },
-  {
-    icon: <i class='fa-solid fa-lightbulb'></i>,
-    num: "51 M",
-    name: "Australian UGC Award",
-  },
+  // {
+  //   icon: <i class='fa-solid fa-lightbulb'></i>,
+  //   num: "51 M",
+  //   name: "Australian UGC Award",
+  // },
   {
     icon: <i class='fa-solid fa-heart'></i>,
-    num: "42 M",
-    name: "IITCA Green Award",
+    num: "1.1 K",
+    name: "Buenas reseñas",
   },
 ]
 export const location = [
@@ -308,7 +308,7 @@ export const footer = [
     text: [{ list: "Home Page" }, { list: "About Page" }, { list: "Service Page" }, { list: "Property Page" }, { list: "Contact Page" }, { list: "Single Blog" }],
   },
   {
-    title: "ALL SECTIONS",
+    title: "SECCIONES",
     text: [{ list: "Headers" }, { list: "Features" }, { list: "Attractive" }, { list: "Testimonials" }, { list: "Videos" }, { list: "Footers" }],
   },
   {

@@ -1,0 +1,55 @@
+.opinions {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+  }
+  
+  .opinions .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .opinions .title {
+    text-align: center;
+  }
+  
+  .opinions .stars-image {
+    width: 120px; /* Ajusta el tamaño de las estrellas */
+    margin-bottom: 20px; /* Ajusta el margen inferior */
+    display: block; /* Cambia a display de bloque para alinear verticalmente */
+    margin: auto; /* Centra horizontalmente */
+  }
+  
+  .opinions .rating-circle {
+    display: inline-block;
+    position: relative;
+    width: 120px; /* Ajusta el tamaño del círculo según sea necesario */
+    height: 120px; /* Ajusta el tamaño del círculo según sea necesario */
+    transform: rotate(90deg);
+  }
+  
+  .opinions .circle-svg {
+    transform: rotate(-90deg); /* Rotar el SVG en sentido antihorario */
+  }
+  
+  .opinions .circle-background,
+  .opinions .circle-fill {
+    fill: none;
+    stroke-width: 10;
+  }
+  
+  .opinions .circle-background {
+    stroke: #e0e0e0; /* Color de fondo del círculo */
+  }
+  
+  .opinions .circle-fill {
+    stroke: #27ae60; /* Color de relleno del círculo */
+    stroke-linecap: round;
+    stroke-dasharray: 0 1000;
+    transition: stroke-dasharray 1s ease;
+  }
+  
+  .opinions .rating {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  

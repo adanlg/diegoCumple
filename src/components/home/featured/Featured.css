@@ -10,3 +10,9 @@
   height: 65px;
   margin: auto;
 }
+
+.featured-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las cards se envuelvan en varias líneas si no caben en una sola línea */
+  justify-content: center; /* Esto centrará horizontalmente las cards */
+}
