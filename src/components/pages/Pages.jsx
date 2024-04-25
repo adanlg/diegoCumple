@@ -8,6 +8,8 @@ import Pricing from "../pricing/Pricing"
 import Blog from "../blog/Blog"
 import Services from "../services/Services"
 import Contact from "../contact/Contact"
+import AllImages from "../allimages/AllImages"; // Importa el componente AllImages
+
 
 const Pages = () => {
   return (
@@ -17,6 +19,7 @@ const Pages = () => {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/about' component={About} />
+          <Route path="/allimages" component={AllImages} />
           <Route exact path='/services' component={Services} />
           <Route exact path='/blog' component={Blog} />
           <Route exact path='/pricing' component={Pricing} />

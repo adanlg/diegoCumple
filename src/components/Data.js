@@ -4,8 +4,8 @@ export const countries = [
       title: "Entrada",
     },
     {
-        image: "../images/list/IMG_4846.JPEG" ,
-      title: "Lateral derecho",
+        image: "../images/list/IMG_4811.JPEG" ,
+      title: "Salón",
     },
     {
         image: "../images/list/IMG_4842.JPG" ,

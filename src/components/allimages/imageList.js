@@ -1,0 +1,41 @@
+// imagesList.js
+const imagesList = [
+    '/images/list/IMG_4759.JPEG',
+    '/images/list/IMG_4803.JPEG',
+    '/images/list/IMG_4841.JPEG',
+    '/images/list/IMG_4763.JPEG',
+    '/images/list/IMG_4805.JPEG',
+    '/images/list/IMG_4842.JPG',
+    '/images/list/DSC_5987.JPG',
+    '/images/list/IMG_4766.JPEG',
+    '/images/list/IMG_4809.JPEG',
+    '/images/list/IMG_4846.JPEG',
+    '/images/list/DSC_5989.JPG',
+    '/images/list/IMG_4770.JPEG',
+    '/images/list/IMG_4811.JPEG',
+    '/images/list/DSC_5994.JPG',
+    '/images/list/IMG_4772.JPEG',
+    '/images/list/IMG_4813.JPEG',
+    '/images/list/DSC_5995.JPG',
+    '/images/list/IMG_4779.JPEG',
+    '/images/list/IMG_4814.JPEG',
+    '/images/list/DSC_5996.JPG',
+    '/images/list/IMG_4783.JPEG',
+    '/images/list/IMG_4823.JPEG',
+    '/images/list/DSC_6017.JPG',
+    '/images/list/IMG_4785.JPEG',
+    '/images/list/IMG_4827.JPEG',
+    '/images/list/DSC_6044.JPG',
+    '/images/list/IMG_4791.JPEG',
+    '/images/list/IMG_4833.JPEG',
+    '/images/list/DSC_5996.JPG',
+    '/images/list/IMG_4747.JPEG',
+    '/images/list/IMG_4798.JPEG',
+    '/images/list/IMG_4839.JPEG',
+    '/images/list/casa nevada.JPG',
+    '/images/list/La Carrasquilla.png',
+
+  ];
+  
+  export default imagesList;
+  

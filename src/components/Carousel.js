@@ -22,7 +22,14 @@ function Carousel({ images }) {
   const slideLeft = () => {
     setCurrent(current === 0 ? images.length - 1 : current - 1);
   };
-  console.log(current);
+
+  const handleViewMore = () => {
+    // Implementa aquí la lógica para mostrar más imágenes
+    // Puedes abrir una nueva vista o un modal con más imágenes
+    // Por ahora, redirigiremos a la ruta '/allimages'
+    window.location.href = '/allimages';
+  };
+
   return (
     <div
       className="carousel"
@@ -37,20 +44,26 @@ function Carousel({ images }) {
       <div className="carousel_wrapper">
         {images.map((image, index) => {
           return (
-            /* (condition) ? true : false */
-
             <div
               key={index}
               className={
-                index == current
+                index === current
                   ? "carousel_card carousel_card-active"
                   : "carousel_card"
               }
             >
-              <img className="card_image" src={image.image} alt="" />
-              <div className="card_overlay">
-                <h2 className="card_title">{image.title}</h2>
-              </div>
+              {index === images.length - 1 ? (
+                <button className="view_more_button" onClick={handleViewMore}>
+                  Ver todas las imágenes
+                </button>
+              ) : (
+                <>
+                  <img className="card_image" src={image.image} alt="" />
+                  <div className="card_overlay">
+                    <h2 className="card_title">{image.title}</h2>
+                  </div>
+                </>
+              )}
             </div>
           );
         })}
@@ -66,7 +79,7 @@ function Carousel({ images }) {
               <div
                 key={index}
                 className={
-                  index == current
+                  index === current
                     ? "pagination_dot pagination_dot-active"
                     : "pagination_dot"
                 }

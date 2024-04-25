@@ -1,0 +1,53 @@
+.all-images {
+    position: relative; /* Posición relativa para contener la cruz flotante */
+    padding-bottom: 60px; /* Ajusta el espacio entre los botones y el footer */
+  }
+  
+  .image-container {
+    max-width: 600px; /* Tamaño máximo para las imágenes */
+    margin: 0 auto; /* Centrar el contenedor de imágenes */
+    position: relative; /* Añade posición relativa para posicionar la cruz relativa a este contenedor */
+  }
+  
+  .image {
+    width: 100%; /* Para que la imagen se ajuste al tamaño del contenedor */
+    max-width: 100%; /* Asegura que la imagen no exceda su tamaño original */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+    margin-bottom: 20px; /* Espacio inferior entre la imagen y los botones */
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .button {
+    margin: 0 10px; /* Espacio entre los botones */
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 32px; /* Tamaño de fuente más grande */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad */
+    border: none;
+    cursor: pointer;
+    z-index: 999; /* Para que esté por encima de las imágenes */
+    color: black; /* Color de la cruz */
+    padding: 8px; /* Espaciado interno */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+  }
+  
+  .close-button:hover {
+    background-color: rgba(255, 255, 255, 0.9); /* Cambio de opacidad al pasar el ratón */
+  }
+  
+  @media (min-width: 768px) {
+    .close-button {
+      top: 5%;
+      transform: translateY(-50%);
+      right: 500px; /* Mueve la cruz hacia la izquierda para que esté a la derecha de la imagen */
+    }
+  }
+  
