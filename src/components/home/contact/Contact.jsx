@@ -44,18 +44,7 @@ const Contact = () => {
                 </button>
             </div>
 
-            {/* Agrega el mapa de Google Maps */}
-            <div className="map-container">
-                <iframe
-                    title="Google Map"
-                    width="100%"
-                    height="400"
-                    frameBorder="0"
-                    style={{ border: 0 }}
-                    src={`https://www.google.com/maps/embed/v1/place?key=${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}&q=41.7782113,-2.5025052`}
-                    allowFullScreen
-                ></iframe>
-            </div>
+
         </div>
     );
 };
