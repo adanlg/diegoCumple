@@ -1,55 +1,64 @@
 import React from "react";
-import { FaWhatsapp, FaPhone } from "react-icons/fa"; // Importa los iconos de WhatsApp y teléfono
-import "./contact.css"; // Importa el archivo CSS para el componente Contact
+import { FaWhatsapp, FaPhone, FaEnvelope } from "react-icons/fa"; // Import email icon
+import "./contact.css";
 import Heading from "../../common/Heading";
 
 const Contact = () => {
-    const phoneNumber = "34697369647"; // Aquí coloca el número de teléfono que desees
+    const phoneNumber = "34697369647";
+    const emailAddress = "casarurallacarrasquilla@gmail.com"; // Define the email address you want to use
   
     const handleWhatsAppClick = () => {
-        window.open(`https://wa.me/${phoneNumber}`, "_blank"); // Abre WhatsApp en una nueva pestaña
+        window.open(`https://wa.me/${phoneNumber}`, "_blank");
     };
 
     const handleCallClick = () => {
-        window.open(`tel:${phoneNumber}`); // Inicia la llamada telefónica
+        window.open(`tel:${phoneNumber}`);
+    };
+
+    const handleEmailClick = () => {
+        window.open(`mailto:${emailAddress}`); // Opens the default mail client
     };
   
     return (
-        <div className="contact" id="contact" style={{paddingBottom: "50px"}}> {/* Aplica la clase contact al contenedor principal */}
+        <div className="contact" id="contact" style={{paddingBottom: "50px"}}>
             <div className='container'>
                 <Heading 
-                    title='Contactar' 
+                    title='Contactar'
                     subtitle={(
                         <>
-                            Llama o escribe un WhatsApp a este número sin ningún compromiso:{" "}
-                            <span style={{fontWeight: "bold"}}>+34 {phoneNumber}</span>
+                            Contacte con nosotros sin ningún compromiso:{" "}
+                            {/* <span style={{fontWeight: "bold"}}>+34 {phoneNumber} / {emailAddress}</span> */}
                         </>
                     )}
                 />
             </div>
             <div className="buttons">
-                <button className="whatsapp" onClick={handleWhatsAppClick}>
+                <button className="whatsapp" onClick={handleWhatsAppClick}> 
                     <FaWhatsapp /> Abrir WhatsApp
                 </button>
                 <button className="call" onClick={handleCallClick}>
                     <FaPhone /> Llamar
                 </button>
+                <button className="email" onClick={handleEmailClick}>
+                    <FaEnvelope /> Escribir un correo
+                </button>
             </div>
 
             {/* Agrega el mapa de Google Maps */}
-            {/* <div className="map-container">
+            <div className="map-container">
                 <iframe
                     title="Google Map"
                     width="100%"
                     height="400"
                     frameBorder="0"
                     style={{ border: 0 }}
-                    src={`https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=41.765703309470,-2.523532335968`}
+                    src={`https://www.google.com/maps/embed/v1/place?key=${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}&q=41.7782113,-2.5025052`}
                     allowFullScreen
                 ></iframe>
-            </div> */}
+            </div>
         </div>
     );
 };
 
 export default Contact;
+

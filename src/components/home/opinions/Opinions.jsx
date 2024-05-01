@@ -4,13 +4,13 @@ import "./styles.css";
 import Review from "./Review";
 
 const Opinions = () => {
-  const rating = 9.2; // Valor del rating
-  const radius = 50; // Radio del círculo
-  const circumference = 2 * Math.PI * radius; // Circunferencia del círculo
+  // const rating = 9.2; // Valor del rating
+  // const radius = 50; // Radio del círculo
+  // const circumference = 2 * Math.PI * radius; // Circunferencia del círculo
 
-  // Calculamos la longitud del arco del círculo basado en el rating
-  const circleStrokeDasharray = `${circumference} ${circumference}`;
-  const circleStrokeDashoffset = circumference - (rating / 10) * circumference;
+  // // Calculamos la longitud del arco del círculo basado en el rating
+  // const circleStrokeDasharray = `${circumference} ${circumference}`;
+  // const circleStrokeDashoffset = circumference - (rating / 10) * circumference;
 
   return (
     <section id="opinions" className="opinions padding"> {/* Add id to the section */}
@@ -21,7 +21,7 @@ const Opinions = () => {
             alt="4.75 stars"
             className="stars-image"
           />
-          <div className="rating-circle">
+          {/* <div className="rating-circle">
             <svg className="circle-svg" width="120" height="120">
               <circle
                 className="circle-background"
@@ -45,8 +45,10 @@ const Opinions = () => {
             </svg>
           </div>
         </div>
-        <Review />
+        // <Review /> */}
       </div>
+      </div>
+
     </section>
   );
 };

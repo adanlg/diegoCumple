@@ -22,8 +22,8 @@ const Footer = () => {
           <div className='box'>
             <div className='logo'>
               <img src='../images/logo-light.png' alt='' />
-              <h2>Si quieres hacer un anal, ven al bacanal</h2>
-              <p>Te puedes quedar aqui, si ami me la sua, ¿no quieres? No si ami me la suda eh</p>
+              {/* <h2>Aquí iría el eslogan</h2>
+              <p>aquí una frase debajo del eslogan</p> */}
 
               {/* <div className='input flex'>
                 <input type='text' placeholder='Email Address' />

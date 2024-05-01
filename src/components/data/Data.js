@@ -28,7 +28,7 @@ export const featured = [
   {
     cover: "../images/hero/h1.png",
     name: "Zona tranquila",
-    total: "Ideal para descansar.  15 min andando del centro",
+    total: "Ideal para descansar.",
   },
   {
     cover: "../images/hero/h2.png",
@@ -43,7 +43,7 @@ export const featured = [
   {
     cover: "../images/hero/h4.png",
     name: "Sitio de estudio",
-    total: "Si te deja Menolo 69",
+    total: "Superrelajante",
   },
   {
     cover: "../images/hero/h6.png",
@@ -304,15 +304,29 @@ export const price = [
 ]
 export const footer = [
   {
-    title: "LAYOUTS",
-    text: [{ list: "Home Page" }, { list: "About Page" }, { list: "Service Page" }, { list: "Property Page" }, { list: "Contact Page" }, { list: "Single Blog" }],
+    title: "DIRECCIÓN",
+    text: [{ list: "C. G, 16, 42005 Urb. las Camaretas, Soria" }
+    //  { list: "CP: " }, { list: "Service Page" }, { list: "Property Page" }, { list: "Contact Page" }, { list: "Single Blog" }
+    ],
   },
   {
-    title: "SECCIONES",
-    text: [{ list: "Headers" }, { list: "Features" }, { list: "Attractive" }, { list: "Testimonials" }, { list: "Videos" }, { list: "Footers" }],
+    title: "CONTACTO",
+    text: [{ list: "+34 697369647" }
+    //  { list: "CP: " }, { list: "Service Page" }, { list: "Property Page" }, { list: "Contact Page" }, { list: "Single Blog" }
+    ],
   },
   {
-    title: "COMPANY",
-    text: [{ list: "About" }, { list: "Blog" }, { list: "Pricing" }, { list: "Affiliate" }, { list: "Login" }, { list: "Changelog" }],
+    title: "CORREO",
+    text: [{ list: "casarurallacarrasquilla@gmail.com" }
+    //  { list: "CP: " }, { list: "Service Page" }, { list: "Property Page" }, { list: "Contact Page" }, { list: "Single Blog" }
+    ],
   },
+  // {
+  //   title: "SECCIONES",
+  //   text: [{ list: "Headers" }, { list: "Features" }, { list: "Attractive" }, { list: "Testimonials" }, { list: "Videos" }, { list: "Footers" }],
+  // },
+  // {
+  //   title: "COMPANY",
+  //   text: [{ list: "About" }, { list: "Blog" }, { list: "Pricing" }, { list: "Affiliate" }, { list: "Login" }, { list: "Changelog" }],
+  // },
 ]

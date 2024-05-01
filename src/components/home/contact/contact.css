@@ -65,3 +65,14 @@
     color: green; /* Cambia al color verde al pasar el mouse */
   }
   
+  .contact .buttons {
+    padding-bottom: 20px; /* Adds 20px of padding to the bottom of the buttons container */
+}
+
+@media (max-width: 768px) {
+  .contact .buttons button {
+      display: block;    /* Makes each button a block element */
+      width: 100%;       /* Each button will take the full width of its container */
+      margin-bottom: 10px; /* Adds some space between the buttons */
+  }
+}
